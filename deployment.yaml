@@ -1,1 +1,20 @@
 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: poc20-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: poc20-app
+  template:
+    metadata:
+      labels:
+        app: poc20-app
+    spec:
+      containers:
+      - name: poc20-app
+        image: <your-dockerhub-username>/poc20:latest
+        ports:
+        - containerPort: 8080
