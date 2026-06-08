@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: poc20-app
-        image: <your-dockerhub-username>/poc20:latest
+        image: syamalanagendrakumarreddy/poc20:latest
         ports:
         - containerPort: 8080
