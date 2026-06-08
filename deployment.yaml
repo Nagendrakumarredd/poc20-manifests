@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: poc20-app
-        image: syamalanagendrakumarredd/poc20:latest
+        image: syamalanagendrakumarredd/poc-20:latest
         ports:
         - containerPort: 8080
