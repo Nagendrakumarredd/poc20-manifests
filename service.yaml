@@ -1,1 +1,13 @@
 
+apiVersion: v1
+kind: Service
+metadata:
+  name: poc20-service
+spec:
+  selector:
+    app: poc20-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: NodePort
